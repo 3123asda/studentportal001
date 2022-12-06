@@ -126,13 +126,58 @@ public class studentportal003 {
                                                                                                                                     }else if(user_pe <= 69){
                                                                                                                                         System.out.println("Invalid Grade Input! Lowest Grade Only 70");
                                                                                                                                     }else{
+                                                                                                                                        System.out.println("dasd");
                                                                                                                                         user_average = (user_ict + user_pr + user_philo + user_filipino + user_pe)/5;
-                                                                                                                                        System.out.println("ict grade"+ user_ict);
                                                                                                                                         System.out.println("NAME: "+ user_name);
                                                                                                                                         System.out.println("SECTION: " + user_section);
                                                                                                                                         System.out.println("GENDER: " + user_gender);
                                                                                                                                         System.out.println("ADDRESS: " + user_address);
                                                                                                                                         System.out.println("GENERAL AVERAGE: " + user_average);
+
+                                                                                                                                        //ICT
+                                                                                                                                        System.out.print("ICT: ");
+                                                                                                                                        if(user_ict >= 75){
+                                                                                                                                            System.out.println("Passed");
+                                                                                                                                        }
+                                                                                                                                        if(user_ict <= 74){
+                                                                                                                                            System.out.println("ICT");
+                                                                                                                                        }
+
+                                                                                                                                        //Practical Research
+                                                                                                                                        System.out.print("Practical Research: ");
+                                                                                                                                        if(user_pr >= 75){
+                                                                                                                                            System.out.println("Passed");
+                                                                                                                                        }
+                                                                                                                                        if(user_pr <= 74){
+                                                                                                                                            System.out.println("Practical Research");
+                                                                                                                                        }
+
+                                                                                                                                        //Philosophy
+                                                                                                                                        System.out.print("Philosophy: ");
+                                                                                                                                        if(user_philo >= 75){
+                                                                                                                                            System.out.println("Passed");                                                                                                                                            
+                                                                                                                                        }
+                                                                                                                                        if(user_philo <= 74){
+                                                                                                                                            System.out.println("Failed");
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        //Filipino
+                                                                                                                                        System.out.print("Filipino: ");
+                                                                                                                                        if(user_filipino >= 75){
+                                                                                                                                            System.out.println("Passed");                                                                                                                                            
+                                                                                                                                        }
+                                                                                                                                        if(user_filipino <= 74){
+                                                                                                                                            System.out.println("Failed");
+                                                                                                                                        }
+
+                                                                                                                                        //Physical Education
+                                                                                                                                        System.out.print("Physical Education: ");
+                                                                                                                                        if(user_pe >= 75){
+                                                                                                                                            System.out.println("Passed");    
+                                                                                                                                        }
+                                                                                                                                        if(user_pe <= 74){
+                                                                                                                                            System.out.println("Failed");
+                                                                                                                                        }
                                                                                                                                         break first_bool;
                                                                                                                                     }
                                                                                                                                 }catch(Exception e){
